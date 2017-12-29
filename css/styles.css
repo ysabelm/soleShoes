@@ -32,7 +32,8 @@ h4 {
 
 nav {
   background-color: #303030;
-  color: #EFEFEF; }
+  color: #EFEFEF;
+  overflow: hidden;}
   nav .container {
     display: flex;
     justify-content: space-between;
