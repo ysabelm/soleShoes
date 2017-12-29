@@ -5,12 +5,8 @@ $(document).ready(() => {
   });
 
   $('.menu-button').on('mouseenter', () => {
-    $('.nav-menu').show();
-    $('.menu-button').animate({
-     color: '#C3FF00',
-     backgroundColor: '#535353',
-     fontSize: '24px'
-    }, 200)
+    $('.nav-menu').removeClass('hide');
+    $('.menu-button').addClass('button-active');
   })
 
   $('.nav-menu').on('mouseleave', () => {
@@ -19,7 +15,7 @@ $(document).ready(() => {
       color: '#EFEFEF',
       backgroundColor: '#303030',
       fontSize: '18px'
-    }, 200)
+    }, 200);
   })
 
 }); 
