@@ -6,18 +6,20 @@ $(document).ready(() => {
 
   $('.menu-button').on('mouseenter', () => {
     $('.nav-menu').show();
-    $('.menu-button').css({
+    $('.menu-button').animate({
      color: '#C3FF00',
-     backgroundColor: '#535353'
-    })
+     backgroundColor: '#535353',
+     fontSize: '24px'
+    }, 200)
   })
 
   $('.nav-menu').on('mouseleave', () => {
     $('.nav-menu').hide();
-    $('.menu-button').css({
+    $('.menu-button').animate({
       color: '#EFEFEF',
-      backgroundColor: '#303030'
-    })
+      backgroundColor: '#303030',
+      fontSize: '18px'
+    }, 200)
   })
 
 }); 
